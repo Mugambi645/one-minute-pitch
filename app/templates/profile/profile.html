@@ -8,9 +8,11 @@
         <hr>
         <!--Display profile photo-->
         <div class="col-md-3">
-            <div class="thumbnail">
+            <div class="col-md-4">
                 {% if user.profile_pic_path %}
-                <img class="" src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail">
+            
+                <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail">
+            
                 {%else%}
                 <p>No profile picture</p>
                 {% endif %}

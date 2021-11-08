@@ -16,8 +16,12 @@ class User(db.Model, UserMixin):
     role_id = db.Column(db.Integer,db.ForeignKey('roles.id'))
     email = db.Column(db.String(255),unique = True,index = True)
     password_hash = db.Column(db.String(255))
-
+    bio = db.Column(db.String(255))
+    profile_pic_path = db.Column(db.String())
+    pitches = db.relationship('Pitch',backref = 'user',lazy = "dynamic")
+    user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
     pass_secure  = db.Column(db.String(255))
+    comments = db.relationship('Comment',backref = 'user',lazy = "dynamic")
     def __repr__(self):
         return f'User {self.username}'
     
@@ -57,7 +61,7 @@ class Pitch(db.Model):
     user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
     likes = db.Column(db.Integer)
     dislikes = db.Column(db.Integer)
-    
+
 
     comments = db.relationship('Comment',backref =  'pitch_id',lazy = "dynamic")
 
