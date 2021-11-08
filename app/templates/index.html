@@ -11,4 +11,64 @@
         <h1 style="color: white;">Sixty Seconds Pitch</h1>
     </div>
 </div>
+<div class="text-center">
+<div class="container" style="padding-bottom: 20px; margin: 5rem;">
+    <a href="{{url_for('main.new_pitch')}}" class="btn btn-success">Create pitch</a>
+</div>
+</div>
+<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Science Pitches</h3>
+                <p>Want to talk abour science,You are in the right place</p>
+                <a href="{{url_for('main.science_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Anaconda Pitches</h3>
+                <p>Want to talk about massice snakes, you're in the right place.</p>
+                <a href="{{url_for('main.anaconda_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Alien Pitches</h3>
+                <p>Want to talk about aliens?You are in the galactical world of conspiracy.</p>
+                <a href="{{url_for('main.alien_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Birds Pitches</h3>
+                <p>Want to talk about birds..Welcome</p>
+                <a href="{{url_for('main.birds_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Culture Pitches</h3>
+                <p>Want to talk about your Culture,Let</p>
+                <a href="{{url_for('main.culture_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Poetry Pitches</h3>
+                <p>Welcome to the hub of amazing poetry</p>
+                <a href="{{url_for('main.poetry_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #912F56; ">
+{% include "footer.html" %}
+</div>
+</div>
+</div>
 {% endblock %}
