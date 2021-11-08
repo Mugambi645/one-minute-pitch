@@ -6,9 +6,17 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {%endblock%}
 {% block content %}
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
+body {
+    font-family: 'Gluten', cursive;
+}
+
+</style>
 <div class="container-fluid" style="background-color: #912F56; padding: 80px;">
     <div class="text-center">
-        <h1 style="color: white;">Sixty Seconds Pitch</h1>
+        <h1 style="color: white;">OneMinutePitch</h1>
     </div>
 </div>
 <div class="text-center">
@@ -16,7 +24,7 @@
     <a href="{{url_for('main.new_pitch')}}" class="btn btn-success">Create pitch</a>
 </div>
 </div>
-<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+<div class="container" style= "font-family: 'Gluten', cursive;;">
     <div class="row">
         <div class="col-md-4">
             <div class="well well-lg">
@@ -41,7 +49,7 @@
         </div>
     </div>
 </div>
-<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+<div class="container" style= "font-family: 'Gluten', cursive;">
     <div class="row">
         <div class="col-md-4">
             <div class="well well-lg">
