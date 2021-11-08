@@ -21,6 +21,7 @@ class User(db.Model, UserMixin):
     pitches = db.relationship('Pitch',backref = 'user',lazy = "dynamic")
     user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
     pass_secure  = db.Column(db.String(255))
+    #date_joined = db.Column(db.DateTime,default=datetime.utcnow)
     comments = db.relationship('Comment',backref = 'user',lazy = "dynamic")
     def __repr__(self):
         return f'User {self.username}'
