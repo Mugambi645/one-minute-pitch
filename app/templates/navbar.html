@@ -11,13 +11,13 @@
         </div>
         <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="">Science</a></li>
-                    <li><a href="">Anacondas</a></li>
-                    <li><a href="">Aliens</a></li>
-                    <li><a href="">Birds</a></li>
-                    <li><a href="culture">Culture</a></li>
-                    <li><a href="poetry">Poetry</a></li>
+                    <li><a href="{{url_for('main.index')}}">Home</a></li>
+                    <li><a href="{{url_for('main.science_pitches')}}">Science</a></li>
+                    <li><a href="{{url_for('main.anaconda_pitches')}}">Anacondas</a></li>
+                    <li><a href="{{url_for('main.alien_pitches')}}">Aliens</a></li>
+                    <li><a href="{{url_for('main.birds_pitches')}}">Birds</a></li>
+                    <li><a href="{{url_for('main.culture_pitches')}}">Culture</a></li>
+                    <li><a href="{{url_for('main.poetry_pitches')}}">Poetry</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
