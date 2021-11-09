@@ -3,7 +3,6 @@ from flask_script import Manager,Server
 from  flask_migrate import Migrate, MigrateCommand
 from app.models import User,Role
 # Creating app instance
-app = create_app("tests")
 app = create_app('production')
 manager = Manager(app)
 migrate = Migrate(app,db)

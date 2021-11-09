@@ -1,5 +1,6 @@
 from instance.config import SECRET_KEY
 import os
+
 class Config:
     """
     General configurations parent class

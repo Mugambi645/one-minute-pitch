@@ -141,8 +141,7 @@ def pitch(id):
         db.session.commit()
 
         return redirect("/pitch/{pitch_id}".format(pitch_id=pitch.id))
-
-        return redirect("/pitch/{pitch_id}".format(pitch_id=pitch.id))
+                                
 
     elif request.args.get("dislike"):
         pitch.dislikes = pitch.dislikes + 1
