@@ -37,7 +37,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ![demo1.png](pic1.jpeg)
 ![demo1.png](pic2.jpeg)
 # Live version
-- [Live version](/)
+- [Live version](https://pitchhack.herokuapp.com//)
 
 ### Licence
 You can use this application for personal use only.
