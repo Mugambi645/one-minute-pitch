@@ -1,7 +1,7 @@
 import os
 
 
-
+import re
 
 class Config:
     '''General configuration class'''
