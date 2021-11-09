@@ -38,8 +38,6 @@ class User(db.Model, UserMixin):
     def verify_password(self,password):
         return check_password_hash(self.pass_secure,password)
 
-    def __repr__(self):
-        return f"User {self.user}"
 class Role(db.Model):
     __tablename__ = 'roles'
 
@@ -62,9 +60,10 @@ class Pitch(db.Model):
     user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
     likes = db.Column(db.Integer)
     dislikes = db.Column(db.Integer)
-
-
     comments = db.relationship('Comment',backref =  'pitch_id',lazy = "dynamic")
+
+    def __repr__(self):
+        return f'User {self.pitch_title}'
 
     def save_pitch(self):
         db.session.add(self)
